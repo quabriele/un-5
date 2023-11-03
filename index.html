@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="/style.css">
+        <title class="brandname"></title>
+
+    </head>
+    <body>
+
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo brandname"></a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">home</a></li>
+                        <li class="nav__item"><a href="#gallery" class="nav__link">gallery</a></li>
+                        <li class="nav__item"><a href="#shop" class="nav__link">shop</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
+
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--HOME-->
+            <section class="home" id="home">
+                <h1 class="brandname"></h1>
+            </section>
+
+            <!--GALLERY-->
+            <section class="decoration section bd-container nonmobile inin" id="gallery">
+                <h2 class="section-title dropname"></h2>
+                <div class="gallerty">
+                  <div class="img">
+                    <img src="/img/gallery/1.png">
+                    <img src="/img/gallery/2.png">
+                    <img src="/img/gallery/3.png">
+                    <img src="/img/gallery/4.png">
+
+                </div>
+                <div class="img">
+                  <img src="/img/gallery/5.png">
+                  <img src="/img/gallery/6.png">
+                  <img src="/img/gallery/7.png">
+                  <img src="/img/gallery/8.png">
+                </div>
+                </div>
+            </section>
+
+
+            <!--GALLERY MOBILE-->
+            <section class="decoration section bd-container mobile inin" id="gallery">
+              <h2 class="section-title dropname"></h2>
+              <div class="gallerty">
+                <div class="img">
+                  <img src="/img/gallery/1.png">
+                  <img src="/img/gallery/4.png">
+                  <img src="/img/gallery/5.png">
+                  <img src="/img/gallery/8.png">
+              </div>  
+              </div>
+          </section>
+
+
+            <!--SHOP DESKTOP-->
+            <section class="cards section nonmobile inin" id="shop">
+                <div class="cards__container shop bd-container bd-grid">
+                    <div class="cards__content" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="snd-title">
+                            <h2 class="section-title-center cards__title">chill hoodie</h2>
+                            <p class="cards__description">sacramento green</p>
+                            <p class="cards__description" style="margin-top: -24px;">x</p>
+                        </div>
+                       <div class="card">
+                        <img src="/img/3871845944.png" alt="immagine card" style="margin-left: -2.4px;">
+                      
+                </div>
+              </div>
+            </section>
+
+            <!--SHOP MOBILE-->
+            <div>
+            </div>
+            <section class="cards section mobile inin afadfsaadfdsfdadfs" id="shop">
+              <h2 class="section-title" style="margin-bottom: 50px;">nome felpa</h2>
+                  <div class="cards__content">
+                      <img src="/img/3871845944.png" alt="immagine card" >
+              </div>
+              <div class="snd-title">
+                <h2 class="section-title-center cards__title ">chill hoodie</h2>
+                <p class="cards__description">sacramento green</p>
+                <p class="cards__description" style="margin-top: -24px;">x</p>
+            </div>
+          </section>
+            
+
+            <!--CONTACT FORM-->
+            <section class="cards section inin" id="contact">
+                <div class="cards__container bd-container bd-grid">
+                  <div class="cards__content">
+                    <div class="aslfknsòafnlksaddnflaò"> 
+                        <div class="sfofsadfsndo">
+                          <div class="sadjfsajf">
+                            <h1 style="text-align: center; margin-top: -10px; margin-bottom: 0px; font-size: 30px;" class="adnjads">
+                              problemi?
+                            </h1>
+                            <h2 style="text-align: center; margin-top: -10px; margin-bottom: 10px;" class="adnjads">
+                              scrivici
+                            </h2>
+                            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit">
+                              <input class="d-none" name="bot-field" />
+                              <div class="form-row">
+                                <div class="form-group col-md-6 mt-3">
+                                  <label for="name" class="csdakd textasdaa">Nome e Cognome</label>
+                                  <input type="text" class="form-control" id="name" name="Nome" required>
+                                </div>
+                                <div class="form-group col-md-6 mt-3">
+                                  <label for="inputEmail" class="textasdaa">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail" name="Mail" required>
+                                </div>
+                                <div class="form-group col-md-6 mt-3">
+                                  <label for="inputOrderCode" class="textasdaa">Codice Ordine</label>
+                                  <input type="text" class="form-control" id="inputOrderCode" name="Codice Ordine" required>
+                                  <p id="orderCodeError" class="text-danger"></p>
+                                </div>
+                                <div class="form-group col-md-6 mt-3">
+                                  <label for="inputText" class="textasdaa">Messaggio</label>
+                                  <textarea class="form-control" id="inputText" name="Messaggio" required></textarea>
+                                </div>
+                              </div>
+                              <div class="iprav">
+                                <p>
+                                  Cliccando su invia dichiari di aver letto <a href="/legal/policy-privacy/policy-privacy.pdf">la policy privacy</a>
+                                </p>
+                              </div>
+                              <button type="submit" class="btn btn-primary mt-3 sublimt">Invia</button>
+                            </form>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        <footer class="footer section inin">
+            <div class="footer__container footersec bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo brandname"></a>
+                    </h3>
+                    <p class="footer__description pivaname"></p>
+                    <p class="footer__description piva"></p>
+                    <p class="footer__description"><a href="mailto:business@equilibrio.shop" style="color: #D1C7C8; text-decoration: none;">email</a></p>
+                    <p class="footer__description"><a href="https://quabriele.com" style="color: #D1C7C8; text-decoration: none;">made be quabriele</a></p>
+                    
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">legal</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">termini e condizioni</a></li>
+                        <li><a href="#" class="footer__link">privacy policy</a></li>          
+                        <li><a href="#" class="footer__link">resi</a></li>
+                        <li><a href="#" class="footer__link">guida alle taglie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="/main.js"></script>
+    </body>
+</html>
+
+
+
+
+
